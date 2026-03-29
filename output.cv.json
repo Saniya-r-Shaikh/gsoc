@@ -1,0 +1,239 @@
+{
+  "name": "FSM Traffic Light",
+  "timePeriod": 500,
+  "clockEnabled": true,
+  "projectId": "o3BGHXBVPhHI8vIL4gbX",
+  "focussedCircuit": 67737403682,
+  "orderedTabs": [
+    "67737403682"
+  ],
+  "scopes": [
+    {
+      "layout": {
+        "width": 100,
+        "height": 60,
+        "title_x": 50,
+        "title_y": 13,
+        "titleEnabled": true
+      },
+      "verilogMetadata": {
+        "isVerilogCircuit": false,
+        "isMainCircuit": false,
+        "code": "// FSM Traffic Light",
+        "subCircuitScopeIds": []
+      },
+      "allNodes": [
+        {
+          "id": 0,
+          "x": -40,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "connections": [
+            1
+          ]
+        },
+        {
+          "id": 1,
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "connections": [
+            0
+          ]
+        },
+        {
+          "id": 2,
+          "x": -40,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "connections": [
+            3
+          ]
+        },
+        {
+          "id": 3,
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "connections": [
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "x": -40,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "connections": [
+            5
+          ]
+        },
+        {
+          "id": 5,
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "connections": [
+            4
+          ]
+        }
+      ],
+      "id": 67737403682,
+      "name": "Main",
+      "Input": [
+        {
+          "x": -300,
+          "y": 0,
+          "objectType": "Input",
+          "label": "RED",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "nodes": {
+              "output1": 1
+            },
+            "values": {
+              "state": 1
+            },
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ]
+          }
+        },
+        {
+          "x": -300,
+          "y": 80,
+          "objectType": "Input",
+          "label": "GREEN",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "nodes": {
+              "output1": 3
+            },
+            "values": {
+              "state": 1
+            },
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ]
+          }
+        },
+        {
+          "x": -300,
+          "y": 160,
+          "objectType": "Input",
+          "label": "YELLOW",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "nodes": {
+              "output1": 5
+            },
+            "values": {
+              "state": 1
+            },
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ]
+          }
+        }
+      ],
+      "VariableLed": [
+        {
+          "x": -150,
+          "y": 0,
+          "objectType": "VariableLed",
+          "label": "RED",
+          "direction": "UP",
+          "labelDirection": "DOWN",
+          "propagationDelay": 10,
+          "customData": {
+            "nodes": {
+              "inp1": 0
+            },
+            "constructorParamaters": [
+              "red"
+            ]
+          },
+          "subcircuitMetadata": {
+            "showInSubcircuit": false,
+            "showLabelInSubcircuit": true,
+            "labelDirection": "DOWN",
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "x": -150,
+          "y": 80,
+          "objectType": "VariableLed",
+          "label": "GREEN",
+          "direction": "UP",
+          "labelDirection": "DOWN",
+          "propagationDelay": 10,
+          "customData": {
+            "nodes": {
+              "inp1": 2
+            },
+            "constructorParamaters": [
+              "green"
+            ]
+          },
+          "subcircuitMetadata": {
+            "showInSubcircuit": false,
+            "showLabelInSubcircuit": true,
+            "labelDirection": "DOWN",
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "x": -150,
+          "y": 160,
+          "objectType": "VariableLed",
+          "label": "YELLOW",
+          "direction": "UP",
+          "labelDirection": "DOWN",
+          "propagationDelay": 10,
+          "customData": {
+            "nodes": {
+              "inp1": 4
+            },
+            "constructorParamaters": [
+              "yellow"
+            ]
+          },
+          "subcircuitMetadata": {
+            "showInSubcircuit": false,
+            "showLabelInSubcircuit": true,
+            "labelDirection": "DOWN",
+            "x": 0,
+            "y": 0
+          }
+        }
+      ],
+      "restrictedCircuitElementsUsed": [],
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

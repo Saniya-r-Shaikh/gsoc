@@ -1,0 +1,10 @@
+{
+  "id": "CV_Traffic_light",
+  "type": "Moore",
+  "initial_state": "RED",
+  "states": [
+    { "name": "RED", "output": { "red": 1, "yellow": 0, "green": 0 } },
+    { "name": "GREEN", "output": { "red": 0, "yellow": 0, "green": 1 } },
+    { "name": "YELLOW", "output": { "red": 0, "yellow": 1, "green": 0 } }
+  ]
+}
