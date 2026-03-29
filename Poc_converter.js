@@ -82,7 +82,7 @@ function fsmToCircuitVerse(fsm) {
   return circuit;
 }
 
-const fsm = JSON.parse(fs.readFileSync("traffic.json"));
+const fsm = JSON.parse(fs.readFileSync("Poc_traffic.json"));
 const result = fsmToCircuitVerse(fsm);
 
 fs.writeFileSync("output.cv.json", JSON.stringify(result, null, 2));
