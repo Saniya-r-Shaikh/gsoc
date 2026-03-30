@@ -17,10 +17,7 @@ In this project:
 `traffic.json` – FSM data  
 
 ## Output
-`output.cv.json` – can be imported into CircuitVerse  
-
-## Demo
-[Add your video link here]
+`output.cv.json` – can be imported into CircuitVerse
 
 ##  Future Improvements
 
@@ -34,4 +31,3 @@ In this project:
 * JavaScript (Node.js)
 * JSON
 * CircuitVerse Simulator
-
